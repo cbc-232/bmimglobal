@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZK5SNXYK3K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZK5SNXYK3K');
+  </script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gallery | BMIM Global - Impacts in Pictures</title>
+  <meta name="description"
+    content="Explore the journey of Believers Miracle International Ministries (BMIM Global) through our gallery. Witness our mission in action, from community outreach to spiritual transformation.">
+
+  <!-- JSON-LD Structured Data for Gallery Page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "BMIM Global Impact Gallery",
+    "description": "A collection of images showcasing the spiritual and community impact of Believers Miracle International Ministries.",
+    "publisher": {
+      "@type": "NonProfitOrganization",
+      "name": "Believers Miracle International Ministries (BMIM Global)",
+      "logo": "https://bmimglobal.com/assets/img/logo.webp"
+    }
+  }
+  </script>
+
+  <!-- Favicons -->
+  <link href="./assets/img/favicon.webp" rel="icon">
+  <link href="./assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="./assets/css/main.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    /* Gallery Specific Styles */
+    .gallery {
+      padding: 60px 0;
+    }
+
+    .gallery-item {
+      margin-bottom: 30px;
+    }
+
+    .gallery-wrap {
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease-in-out;
+      background: #f8f9fa;
+      height: 350px;
+      /* Fixed height for consistency */
+    }
+
+    .gallery-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .gallery-info {
+      position: absolute;
+      inset: 0;
+      background: rgba(16, 110, 234, 0.85);
+      /* Premium Blue Overlay */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      transform: translateY(20px);
+    }
+
+    .gallery-info h4 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .gallery-info p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .gallery-links a {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.2);
+      width: 44px;
+      height: 44px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      transition: 0.3s;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .gallery-links a:hover {
+      background: #fff;
+      color: #106eea;
+    }
+
+    .gallery-wrap:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-wrap:hover img {
+      transform: scale(1.15);
+    }
+
+    .gallery-wrap:hover .gallery-info {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* GLightbox Navigation Styling */
+    .glightbox-container .gnext, .glightbox-container .gprev {
+      background-color: rgba(16, 110, 234, 0.1) !important; 
+      border-radius: 50% !important;
+      width: 60px !important;
+      height: 60px !important;
+      transition: all 0.3s ease !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+
+    .glightbox-container .gnext path, .glightbox-container .gprev path {
+      fill: #106eea;
+    }
+
+    .glightbox-container .gnext:hover, .glightbox-container .gprev:hover {
+      background-color: #106eea;
+    }
+
+    .glightbox-container .gnext:hover path, .glightbox-container .gprev:hover path {
+      fill: #fff;
+    }
+
+    /* Responsive adjustments for navigation */
+    @media (max-width: 768px) {
+      .glightbox-container .gnext, .glightbox-container .gprev {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    /* Masonry-like spacing fix */
+    .row.gy-4 {
+      --bs-gutter-y: 1.5rem;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a
+              href="mailto:info.bmim.sl@gmail.com">info.bmim.sl@gmail.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+232 99 222 204</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://www.facebook.com/groups/2851408771830166/" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.youtube.com/@BMIM_Global" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.tiktok.com/@bmimglobal" target="_blank" rel="noopener" title="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="./index.html" class="logo d-flex align-items-center">
+          <img src="./assets/img/logo.webp" alt="BMIM Global Logo">
+          <span class="sitename">BMIM</span>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="dropdown"><a href="./ministries.html"><span>Ministries</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li class="dropdown"><a href="#"><span>📻 Voice of Believers Radio</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Coming Soon</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>🙏 Prayer Rain</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Coming Soon</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>🏫 Believers King College</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Coming Soon</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>🧼 BMIM Soap Industries</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Coming Soon</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>🌾 BMIM Agricultural Project</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Coming Soon</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>🎵 Music Academy</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Coming Soon</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="./sermons.html">Sermons</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./gallery.html" class="active">Gallery</a></li>
+            <li><a href="./donate.html">Donate</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <section class="hero">
+      <!-- Background Image Slides -->
+      <div class="slider">
+        <div class="slide" style="background-image:url('./assets/img/Background-Images/bg-image0.webp')"></div>
+        <div class="slide" style="background-image:url('./assets/img/Background-Images/bg-image1.webp')"></div>
+        <div class="slide" style="background-image:url('./assets/img/Background-Images/bg-image2.webp')"></div>
+        <div class="slide" style="background-image:url('./assets/img/Background-Images/bg-image3.webp')"></div>
+        <div class="slide" style="background-image:url('./assets/img/Background-Images/bg-image4.webp')"></div>
+        <div class="slide" style="background-image:url('./assets/img/Background-Images/bg-image5.webp')"></div>
+        <!-- Duplicates for smooth loop -->
+        <div class="slide" style="background-image: url('./assets/img/Background-Images/bg-image0.webp');"></div>
+        <div class="slide" style="background-image: url('./assets/img/Background-Images/bg-image1.webp');"></div>
+        <div class="slide" style="background-image: url('./assets/img/Background-Images/bg-image2.webp');"></div>
+        <div class="slide" style="background-image: url('./assets/img/Background-Images/bg-image3.webp');"></div>
+        <div class="slide" style="background-image: url('./assets/img/Background-Images/bg-image4.webp');"></div>
+        <div class="slide" style="background-image: url('./assets/img/Background-Images/bg-image5.webp');"></div>
+      </div>
+
+      <!-- Text Overlay -->
+      <div class="text-overlay">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Gallery</h2>
+        </div><!-- End Section Title -->
+        <h1 class="title">BMIM Global: Witnessing Faith in Action</h1>
+        <p class="subtitle">Capturing moments of spiritual growth, community impact, and the glory of God through our mission.</p>
+
+        <div class="scroll-indicator">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+      <div class="container">
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/%20Image%202026-03-30%20at%2011.24.10.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/%20Image%202026-03-30%20at%2011.24.10.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/%20Image%202026-03-30%20at%2011.24.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/%20Image%202026-03-30%20at%2011.24.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/%20Image%202026-03-30%20at%2011.30.33.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/%20Image%202026-03-30%20at%2011.30.33.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/%20Image%202026-03-30%20at%2011.37.33.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/%20Image%202026-03-30%20at%2011.37.33.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Wh%20-03-30%20at%2011.36.58.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Wh%20-03-30%20at%2011.36.58.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Wh%202026-03-30%20at%2011.24.07.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Wh%202026-03-30%20at%2011.24.07.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Wh%20Image%202026-03-30%20at%2011.10.20.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Wh%20Image%202026-03-30%20at%2011.10.20.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Wh%20age%202026-03-30%20at%2011.31.03.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Wh%20age%202026-03-30%20at%2011.31.03.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Wha%202026-03-30%20at%2011.24.13.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Wha%202026-03-30%20at%2011.24.13.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Wha%2026-03-30%20at%2011.31.02.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Wha%2026-03-30%20at%2011.31.02.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhaApp%20Image%202026-03-30%20at%2011.05.34.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhaApp%20Image%202026-03-30%20at%2011.05.34.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/What%200%20at%2011.31.02.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/What%200%20at%2011.31.02.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/What%202026-03-30%20at%2011.36.56.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/What%202026-03-30%20at%2011.36.56.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/What%2026-03-30%20at%2011.31.04.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/What%2026-03-30%20at%2011.31.04.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/What%20Image%202026-03-30%20at%2011.05.34.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/What%20Image%202026-03-30%20at%2011.05.34.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/What%20at%2011.37.40.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/What%20at%2011.37.40.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/What.37.43.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/What.37.43.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/What0%20at%2011.37.18.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/What0%20at%2011.37.18.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Whatage%202026-03-30%20at%2011.37.18.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Whatage%202026-03-30%20at%2011.37.18.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Whatftyhftyftyfty.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Whatftyhftyftyfty.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Whatpp%20Image%202026-03-30%20at%2011.05.31.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Whatpp%20Image%202026-03-30%20at%2011.05.31.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Whats%20-30%20at%2011.37.27.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Whats%20-30%20at%2011.37.27.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Whats%20-30%20at%2011.37.31.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Whats%20-30%20at%2011.37.31.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Whats%200%20at%2011.36.59.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Whats%200%20at%2011.36.59.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Whats%200%20at%2011.37.34.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Whats%200%20at%2011.37.34.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Whats%202026-03-30%20at%2011.30.50.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Whats%202026-03-30%20at%2011.30.50.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Whats%2026-03-30%20at%2011.37.20.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Whats%2026-03-30%20at%2011.37.20.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Whats2026-03-30%20at%2011.37.41.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Whats2026-03-30%20at%2011.37.41.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsA%20%2011.37.37.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsA%20%2011.37.37.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsA%2030%20at%2011.36.50.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsA%2030%20at%2011.36.50.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsA%2030%20at%2011.36.57.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsA%2030%20at%2011.36.57.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsA%206-03-30%20at%2011.31.01.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsA%206-03-30%20at%2011.31.01.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsAmage%202026-03-30%20at%2011.05.30.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsAmage%202026-03-30%20at%2011.05.30.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsAp%20026-03-30%20at%2011.30.51.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsAp%20026-03-30%20at%2011.30.51.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsAp%202026-03-30%20at%2011.27.46.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsAp%202026-03-30%20at%2011.27.46.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsAp%2026-03-30%20at%2011.37.20.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsAp%2026-03-30%20at%2011.37.20.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsAp%2026-03-30%20at%2011.37.34.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsAp%2026-03-30%20at%2011.37.34.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsAp%203-30%20at%2011.37.38.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsAp%203-30%20at%2011.37.38.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsAp03-30%20at%2011.37.37.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsAp03-30%20at%2011.37.37.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApn%203-30%20at%2011.37.35.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApn%203-30%20at%2011.37.35.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20%2011.27.42.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20%2011.27.42.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20-03-30%20at%2011.24.12.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20-03-30%20at%2011.24.12.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20-03-30%20at%2011.30.53.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20-03-30%20at%2011.30.53.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20-03-30%20at%2011.31.01.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20-03-30%20at%2011.31.01.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%2003-30%20at%2011.27.30.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%2003-30%20at%2011.27.30.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%202026-03-30%20at%2011.10.19.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%202026-03-30%20at%2011.10.19.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%2026-03-30%20at%2011.30.51.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%2026-03-30%20at%2011.30.51.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%203-30%20at%2011.30.58.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%203-30%20at%2011.30.58.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%2030%20at%2011.24.14.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%2030%20at%2011.24.14.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%2030%20at%2011.31.01.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%2030%20at%2011.31.01.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%2030%20at%2011.37.36.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%2030%20at%2011.37.36.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%206-03-30%20at%2011.27.34.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%206-03-30%20at%2011.27.34.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%206-03-30%20at%2011.30.52.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%206-03-30%20at%2011.30.52.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%206-03-30%20at%2011.31.03.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%206-03-30%20at%2011.31.03.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Ima%202026-03-30%20at%2011.05.27.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Ima%202026-03-30%20at%2011.05.27.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Ima%20at%2011.36.57.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Ima%20at%2011.36.57.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Ima30%20at%2011.37.36.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Ima30%20at%2011.37.36.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%20-03-30%20at%2011.27.26.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%20-03-30%20at%2011.27.26.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%20-03-30%20at%2011.30.58.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%20-03-30%20at%2011.30.58.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%20-30%20at%2011.30.53.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%20-30%20at%2011.30.53.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%20.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%20.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%20026-03-30%20at%2010.57.38.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%20026-03-30%20at%2010.57.38.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%20202-03-30%20at%2010.57.35.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%20202-03-30%20at%2010.57.35.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026%200%20at%2011.37.19.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026%200%20at%2011.37.19.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026--30%20at%2010.57.32.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026--30%20at%2010.57.32.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2010.57.32.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2010.57.32.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2010.57.33.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2010.57.33.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.05.26.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.05.26.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.05.35.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.05.35.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.10.21.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.10.21.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.10.22.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.10.22.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.21.52.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.21.52.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.21.53.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.21.53.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.21.54.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.21.54.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.21.56.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.21.56.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.21.58.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.21.58.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.22.09.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.22.09.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.24.05.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.24.05.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.24.07.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.24.07.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.24.09.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.24.09.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.30.47.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.30.47.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.37.13.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-03-30%20at%2011.37.13.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%202026-30%20at%2010.57.33.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%202026-30%20at%2010.57.33.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%2026-03-30%20at%2010.57.36.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%2026-03-30%20at%2010.57.36.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%203-30%20at%2011.27.42.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%203-30%20at%2011.27.42.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%203-30%20at%2011.27.43.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%203-30%20at%2011.27.43.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%2030%20at%2011.27.32.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%2030%20at%2011.27.32.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%2030%20at%2011.30.48.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%2030%20at%2011.30.48.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%2030.50.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%2030.50.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image%20Children%202026-03-30%20at%2011.05.26.jpeg"
+                class="img-fluid" alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image%20Children%202026-03-30%20at%2011.05.26.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20Image-03-30%20at%2011.10.21.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20Image-03-30%20at%2011.10.21.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20at%2011.27.46.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20at%2011.27.46.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20at%2011.30.39.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20at%2011.30.39.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20at%2011.30.54.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20at%2011.30.54.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20dsczd.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20dsczd.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp%20ge%202026-03-30%20at%2011.31.00.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp%20ge%202026-03-30%20at%2011.31.00.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp-03-30%20at%2011.24.11.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp-03-30%20at%2011.24.11.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/WhatsApp03-30%20at%2011.31.01.jpeg" class="img-fluid"
+                alt="BMIM Global Gallery" loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/WhatsApp03-30%20at%2011.31.01.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/Whatt%2011.31.01.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/Whatt%2011.31.01.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item">
+            <div class="gallery-wrap">
+              <img src="assets/img/Gallery%20/zsdghjckshjsd.jpeg" class="img-fluid" alt="BMIM Global Gallery"
+                loading="lazy">
+              <div class="gallery-info">
+                <h4>BMIM Global</h4>
+                <p>Serving God and Humanity</p>
+                <div class="gallery-links">
+                  <a href="assets/img/Gallery%20/zsdghjckshjsd.jpeg" title="View Image" class="glightbox" data-gallery="portfolio-gallery" data-type="image" data-glightbox="gallery: portfolio-gallery"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="./index.html" class="d-flex align-items-center">
+            <span class="sitename">B.M.I.M</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>04 Off Kania Junction</p>
+            <p>Koidu City, Eastern Sierra Leone</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+232 99 222 204</span></p>
+            <p><strong>Email:</strong> <span>info.bmim.sl@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="./index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./about.html">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./sermons.html">Sermons</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./donate.html">Support our mission</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Ministries</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> 📻 Voice of Believers Radio</li>
+            <li><i class="bi bi-chevron-right"></i> 🙏 Believers Prayer Rain</li>
+            <li><i class="bi bi-chevron-right"></i> 🏫 Believers King College</li>
+            <li><i class="bi bi-chevron-right"></i> 🧼 BMIM Soap Industries</li>
+            <li><i class="bi bi-chevron-right"></i> 🌾 BMIM Agricultural Project</li>
+            <li><i class="bi bi-chevron-right"></i> 🎵 Music Academy</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>On these social media platforms</p>
+          <div class="social-links d-flex">
+            <a href="https://www.facebook.com/groups/2851408771830166/" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com/@BMIM_Global" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.tiktok.com/@bmimglobal" target="_blank" rel="noopener" title="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">B.M.I.M.</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Engineered & Powered by <a href="https://cyberbizclinic.co/" target="_blank" rel="noopener">CyberBiz Clinic</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/aos/aos.js"></script>
+  <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="./assets/js/main.min.js"></script>
+
+  <script>
+    /**
+     * Initialize GLightbox
+     */
+    const glightbox = GLightbox({
+      selector: '.glightbox',
+      loop: true,
+      openEffect: 'zoom',
+      closeEffect: 'fade',
+      dragNavigation: true,
+      touchNavigation: true,
+      keyboardNavigation: true
+    });
+
+    /**
+     * Portfolio isotope and filter
+     */
+    window.addEventListener('load', () => {
+      let portfolioContainer = document.querySelector('.portfolio-container');
+      if (portfolioContainer) {
+        let portfolioIsotope = new Isotope(portfolioContainer, {
+          itemSelector: '.gallery-item',
+          layoutMode: 'fitRows'
+        });
+      }
+    });
+  </script>
+
+</body>
+
+</html>
